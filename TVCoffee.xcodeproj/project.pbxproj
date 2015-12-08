@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CDD3D295B29F8CEA6EF4AC1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DD45EA54D2E0A5F2AB9422 /* Pods.framework */; };
+		5E75CE661C167A1900089245 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CE651C167A1900089245 /* Podfile */; };
 		5EA6A5261C1631ED008F88F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6A5251C1631ED008F88F6 /* AppDelegate.swift */; };
 		5EA6A5281C1631ED008F88F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6A5271C1631ED008F88F6 /* ViewController.swift */; };
 		5EA6A52B1C1631ED008F88F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6A5291C1631ED008F88F6 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F79D13F220F4AC2EF33CC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5E75CE651C167A1900089245 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		5EA6A5221C1631ED008F88F6 /* TVCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA6A5251C1631ED008F88F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA6A5271C1631ED008F88F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		5EA6A53E1C1631EE008F88F6 /* TVCoffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVCoffeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA6A5421C1631EE008F88F6 /* TVCoffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCoffeeUITests.swift; sourceTree = "<group>"; };
 		5EA6A5441C1631EE008F88F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81DD45EA54D2E0A5F2AB9422 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7565D37FFB6C1BB2B67584E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDD3D295B29F8CEA6EF4AC1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110856BA45E1DCC6E5631AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81DD45EA54D2E0A5F2AB9422 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5EA6A5191C1631ED008F88F6 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +94,8 @@
 				5EA6A5361C1631EE008F88F6 /* TVCoffeeTests */,
 				5EA6A5411C1631EE008F88F6 /* TVCoffeeUITests */,
 				5EA6A5231C1631ED008F88F6 /* Products */,
+				C506698F169DEA2B8204BDE7 /* Pods */,
+				110856BA45E1DCC6E5631AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				5EA6A5251C1631ED008F88F6 /* AppDelegate.swift */,
+				5E75CE651C167A1900089245 /* Podfile */,
 				5EA6A5271C1631ED008F88F6 /* ViewController.swift */,
 				5EA6A5291C1631ED008F88F6 /* Main.storyboard */,
 				5EA6A52C1C1631EE008F88F6 /* Assets.xcassets */,
@@ -122,6 +140,15 @@
 			path = TVCoffeeUITests;
 			sourceTree = "<group>";
 		};
+		C506698F169DEA2B8204BDE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7565D37FFB6C1BB2B67584E /* Pods.debug.xcconfig */,
+				05F79D13F220F4AC2EF33CC2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EA6A5471C1631EE008F88F6 /* Build configuration list for PBXNativeTarget "TVCoffee" */;
 			buildPhases = (
+				BC083385C4C97D65FA8F3C1E /* Check Pods Manifest.lock */,
 				5EA6A51E1C1631ED008F88F6 /* Sources */,
 				5EA6A51F1C1631ED008F88F6 /* Frameworks */,
 				5EA6A5201C1631ED008F88F6 /* Resources */,
+				4F4BE9ECA9BA279C74B098F1 /* Embed Pods Frameworks */,
+				5CE62CEC173713AA64E530A1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CE661C167A1900089245 /* Podfile in Resources */,
 				5EA6A52D1C1631EE008F88F6 /* Assets.xcassets in Resources */,
 				5EA6A52B1C1631ED008F88F6 /* Main.storyboard in Resources */,
 			);
@@ -249,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F4BE9ECA9BA279C74B098F1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CE62CEC173713AA64E530A1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC083385C4C97D65FA8F3C1E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EA6A51E1C1631ED008F88F6 /* Sources */ = {
@@ -386,6 +465,7 @@
 		};
 		5EA6A5481C1631EE008F88F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7565D37FFB6C1BB2B67584E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -398,6 +478,7 @@
 		};
 		5EA6A5491C1631EE008F88F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F79D13F220F4AC2EF33CC2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -475,6 +556,7 @@
 				5EA6A5491C1631EE008F88F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EA6A54A1C1631EE008F88F6 /* Build configuration list for PBXNativeTarget "TVCoffeeTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +565,7 @@
 				5EA6A54C1C1631EE008F88F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EA6A54D1C1631EE008F88F6 /* Build configuration list for PBXNativeTarget "TVCoffeeUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +574,7 @@
 				5EA6A54F1C1631EE008F88F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
